@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+    width: auto;
+    background-color: lightgray;
+    font-family: "outfit", sans-serif;
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;
+}
+
+a .imgQr {
+    width: 20vw;
+    margin: 1.5rem 1.5rem 2rem 1.5rem;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;
+}
+
+.informations {
+    width: auto;
+    margin-bottom: 1rem;
+
+}
+
+.infosQrCode {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    display: flex;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+}
+
+.attribution {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1080px) and (max-width: 1650px) {
+    a .imgQr {
+        width: 25vw;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+    a .imgQr {
+        width: 45vw;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 393px) and (max-width: 768px) {
+    a .imgQr {
+        width: 60vw;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .attribution {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 393px) {
+    a .imgQr {
+        width: 75vw;
+        margin: 1rem 1rem 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+
+    .attribution {
+        font-size: 0.8rem;
+    }
+}
