@@ -4,36 +4,32 @@
     border: 0;
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 body {
-    width: auto;
-    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(213, 225, 239);
     font-family: "outfit", sans-serif;
     font-size: 15px;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-}
-
 .container {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5rem;
+    width: 375px;
+    margin: 1rem;
+    padding: 1rem 1rem 2rem;
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;
 }
 
-a .imgQr {
-    width: 20vw;
-    margin: 1.5rem 1.5rem 2rem 1.5rem;
-    object-fit: cover;
-    border-radius: 20px;
+.container img {
+    width: 100%;
+    border-radius: 15px;
     box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;
 }
 
@@ -52,19 +48,21 @@ a .imgQr {
 }
 
 h1 {
-    display: flex;
+    padding: 1rem;
+    font-weight: 700;
 }
 
 .text {
     display: flex;
     flex-direction: column;
     font-size: 1.3rem;
-    margin: 1.5rem 0 2rem 0;
+    font-weight: 400;
     text-align: center;
+    color: darkgray;
 }
 
 .attribution {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -73,44 +71,37 @@ h1 {
 }
 
 @media (min-width: 1080px) and (max-width: 1650px) {
-    a .imgQr {
-        width: 25vw;
-    }
-
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .text {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1080px) {
-    a .imgQr {
-        width: 45vw;
-    }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .text {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
 @media (min-width: 393px) and (max-width: 768px) {
-    a .imgQr {
-        width: 60vw;
+    .container {
+        width: auto;
     }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .text {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .attribution {
@@ -119,17 +110,13 @@ h1 {
 }
 
 @media (min-width: 280px) and (max-width: 393px) {
-    a .imgQr {
-        width: 75vw;
-        margin: 1rem 1rem 2rem 1rem;
-    }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .text {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .attribution {
